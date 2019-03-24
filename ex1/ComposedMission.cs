@@ -10,7 +10,7 @@ namespace Excercise_1
     {
         private string name;
 
-        private String type = "Single";
+        private String type = "Composed";
 
         public event EventHandler<double> OnCalculate;
 

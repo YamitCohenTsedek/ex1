@@ -18,7 +18,10 @@ namespace Excercise_1
 
         public string Type
         {
-            get;
+            get
+            {
+                return type;
+            }
         }
 
         public SingleMission(Calc func, string name)
