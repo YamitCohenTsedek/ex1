@@ -8,17 +8,18 @@ namespace Excercise_1
 {
     public class ComposedMission : IMission
     {
-        private string name;
-
-        private String type = "Composed";
+        // a member that will save the name of the Calc function
+        private string funcName;
 
         public event EventHandler<double> OnCalculate;
 
+        // setting a list of delegates from type Calc as a member
         private List<Calc> functions = new List<Calc>();
 
+        // constructor
         public ComposedMission(string missionName)
         {
-            name = missionName;
+            funcName = missionName;
         }
 
 
@@ -26,21 +27,15 @@ namespace Excercise_1
         {
             get
             {
-                return name;
+                return funcName;
             }
             set
             {
-                name = value;
+                funcName = value;
             }
         }
 
-        public string Type
-        {
-            get
-            {
-                return type;
-            }
-        }
+        public string Type { get; } = "Composed";
 
         public ComposedMission Add(Calc function)
         {
@@ -58,6 +53,7 @@ namespace Excercise_1
                 currentValue = function(currentValue);
             }
 
+            // invoke the event handler only if it's not null
             if (OnCalculate != null)
             {
                 OnCalculate.Invoke(this, currentValue);
