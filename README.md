@@ -48,7 +48,7 @@ In the code above we created a ComposedMission that performs the following calcu
 
 
 ![image](https://user-images.githubusercontent.com/45918740/100989887-fb55d580-3559-11eb-921e-d0c6df6b9e98.png) <br />
-In the code above we created a ComposedMission that performs the following calculation: <br />
+In the code above we created a SingleMission that performs the following calculation: <br />
 ![image](https://user-images.githubusercontent.com/45918740/100989934-0a3c8800-355a-11eb-89d3-05cf238ef4d2.png) <br /> <br /> <br />
 
 ![image](https://user-images.githubusercontent.com/45918740/100991258-7966ac00-355b-11eb-9860-eb22d6e12930.png) <br />
@@ -56,7 +56,7 @@ In the code above we printed all the available functions. <br /> <br /> <br />
 
 
 ![image](https://user-images.githubusercontent.com/45918740/100991421-a4e99680-355b-11eb-89c8-864d5b9c7a7a.png) <br />
-In the code above we created a new function named Stam, that does not change the value received but returns it as it is. <br />
+In the code above we created a new function named Stam, that does not change the received value, but returns it as it is. <br />
 ![image](https://user-images.githubusercontent.com/45918740/100991718-fdb92f00-355b-11eb-8966-c0d018a4c208.png) <br />
 
 Therefore, the mission above performs the following calculation: <br />
